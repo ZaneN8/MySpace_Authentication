@@ -6,13 +6,15 @@ import { AuthContext } from "../providers/AuthProvider";
 const Login = (props) => {
   const history = useHistory();
   const { handleLogin } = useContext(AuthContext);
-  const email = useFormInput("Email", "");
-  const password = useFormInput("Password", "");
+  const email = useFormInput("Email", "hello@test.com"); // TODO fix
+  const password = useFormInput("Password", "123456");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     handleLogin({ email: email.value, password: password.value }, history);
   };
+
+  // TODO Make login page redirect after you log in
 
   return (
     <div>

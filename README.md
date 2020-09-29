@@ -1,32 +1,20 @@
-# Starter Project
+This is going to be a 3-day assignment, before trying to accomplish the myspace version of this you work on adding auth to your starter project or create a new starter project.
 
-## Steps to setup
+Basic Objectives:
 
-1. `git clone git@github.com:ZaneN8/react_rails_router_starter.git <project-name>`
+Create a social media app
+A user can create an account and log in.
+A user can view other users.
+A user can create posts.
+Must have Rails backend
+Incorporate all CRUD actions
+Must incorporate the context api to handle authentication.
+Styled with your choice of CSS Framework, CSS, styled components, etc...
+Pushed to github
 
-2. `cd <project-name>`
-3. run `bundle install`
+Bonus Objectives:
 
-4. In `database.yml` change name of database react_rails_router_starter to `<project-name>` using TODOS
-
-5. run `rails db:create db:migrate db:seed`
-
-- Check seeds page
-
-6. `rails s -p 3001` to start rails server
-7. `cd client && yarn start` to start yarn server
-
-### handle git
-
-- you can ether remove the remote and add your own, or you can remove the git repo. Remove the remote keeps the commit history from the starter project. `rm -rf .git` will completely remove it.
-
-8. remove origin `git remote rm origin`
-   `git remote add origin <ssh-link>`
-9. or `rm -rf .git` && `git init`
-
-10. start servers
-
-11. Remove ReadMe
-
-- Link to faker: https://github.com/faker-ruby/faker
-- Link to Bootstrap: https://react-bootstrap.netlify.app/components/alerts
+A user can befriend other users. (like today with liked_cats)
+Top Friends
+Users can like posts.
+Users can comment on posts.

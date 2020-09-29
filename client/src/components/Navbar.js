@@ -11,7 +11,12 @@ const NavBar = () => {
     if (user) {
       return (
         <>
-          <Link onClick={() => handleLogout(history)}>Logout</Link>
+          <div
+            style={({ color: "blue" }, { cursor: "pointer" })}
+            onClick={() => handleLogout(history)}
+          >
+            Logout
+          </div>
         </>
       );
     } else {
