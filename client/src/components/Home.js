@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import { Button, Card } from "react-bootstrap";
+import PostForm from "./PostForm";
 
 const Home = () => {
   const [people, setPeople] = useState([]);
@@ -41,8 +42,10 @@ const Home = () => {
   return (
     <div>
       <h1>Home</h1>
-
-      <div>{renderPeople()}</div>
+      <div>
+        {renderPeople()}
+        <PostForm />
+      </div>
     </div>
   );
 };
