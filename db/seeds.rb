@@ -4,14 +4,7 @@ require "faker"
 
 Person.destroy_all
 
-User.create(
-    name: "Zane",
-    age: 27,
-    location: 'Home'
-    avatar: Faker::Avatar.image(slug: name, size: '50x50'),
-    email: 'tester@test.com',
-    password: "123456"
-)
+
 
 
 50.times do |i|

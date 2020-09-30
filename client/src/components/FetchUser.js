@@ -11,7 +11,7 @@ const FetchUser = (props) => {
   }, []);
 
   const checkUser = async () => {
-    if (authenticated || !localStorage.getItem("access=token")) {
+    if (authenticated || !localStorage.getItem("access-token")) {
       setLoaded(true);
       return;
     }

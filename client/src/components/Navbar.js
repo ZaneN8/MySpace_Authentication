@@ -32,10 +32,12 @@ const NavBar = () => {
 
   return (
     <div style={styles.navbar}>
-      <Link to="/">Home</Link>
-      <span style={{ marginRight: "10px" }}></span>
+      <div>
+        <Link to="/">Home</Link>
+        <span style={{ marginRight: "10px" }}></span>
+        {user && <Link to="/landing">My Page</Link>}
+      </div>
       <div>{correctNavBar()}</div>
-      {user && <Link to="/samplesDemo">Samples</Link>}
     </div>
   );
 };
